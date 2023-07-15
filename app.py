@@ -7,14 +7,15 @@ api = Api()
 pagedown = PageDown()
 
 
-def create_app():
-    app = Flask(__name__)
-    app.config['SECRET_KEY'] = os.urandom(24)
-    # extensions
-    api.init_app(app)
-    pagedown.init_app(app)
+app = Flask(__name__)
+app.config['SECRET_KEY'] = os.urandom(24)
+# extensions
+api.init_app(app)
+pagedown.init_app(app)
+from core import core
+app.register_blueprint(core)
 
-    from core import core
-    app.register_blueprint(core)
 
-    return app
+
+if __name__ == "__main__":
+    app.run(debug=True)
