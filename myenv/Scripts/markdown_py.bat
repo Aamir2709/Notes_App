@@ -1,0 +1,1 @@
+@"c:\users\aamir\downloads\a-simple-note-taking-web-app-master\myenv\scripts\python.exe" "c:\users\aamir\downloads\a-simple-note-taking-web-app-master\myenv\Scripts\markdown_py" %*

@@ -1,0 +1,122 @@
+/* ========================= base.html styles ========================= */
+
+.add-margin-top {
+    margin-top: 5%;
+  }
+  
+  @media only screen and (max-device-width: 480px) {
+    /* define mobile specific styles here */
+    .add-margin-top {
+      margin-top: 20%;
+    }
+  
+    .add-margin-bottom {
+      margin-top: 5%;
+    }
+  }
+  
+  .add-margin-bottom {
+    margin-bottom: 5%;
+  }
+  
+  body {
+    background-color: #F5E6CA;
+  }
+  
+  /* ========================= Homepage styles ========================= */
+  
+  .navbar-default {
+    font-size: 17px;
+    margin: 0;
+    padding: 7px;
+  }
+  
+  nav .navbar-brand {
+    font-size: 20px;
+  }
+  
+  /* change default hover on links */
+  .navbar-default .navbar-nav > li > a:hover,
+  .navbar-default .navbar-nav > li > a:focus,
+  .navbar-default .navbar-brand:hover {
+    color: #C76F0D;
+  }
+  
+  /* change default active links */
+  .navbar-default .navbar-nav > .active > a,
+  .navbar-default .navbar-nav > .active > a:focus,
+  .navbar-default .navbar-nav > .active > a:hover {
+  
+  }
+  
+  /* change default behavior of jumbotron */
+  .jumbotron {
+    margin-bottom: 0;
+    height: 350px;
+    color: white;
+    background-color: #C76F0D;
+    border-radius: 0 !important;
+  }
+  
+  .jumbotron .element {
+    color: white;
+  }
+  
+  .section-heading {
+    color: #C76F0D;
+  }
+  
+  .hr-line {
+    max-width: 50px;
+    border-top: 2px solid #C76F0D;
+  }
+  
+  /* ========================= Profile styles ========================= */
+  
+  .list-group-item {
+    border-radius: 0 !important;
+  }
+  
+  .thumbnail {
+    border-radius: 0;
+    box-shadow: 2px 2px 2px #D6DBDF;
+    border-style: none;
+    border: 0;
+    color: #C76F0D;
+  }
+  
+  .thumbnail:hover {
+    box-shadow: 2px 2px 2px #A6ACAF;
+    border-style: none;
+    border: 0;
+    text-decoration: none;
+  }
+  
+  .no_borders {
+    border-radius: 0;
+  }
+  
+  .flask-pagedown-preview {
+    margin-top: 2%;
+    padding: 2%;
+    background-color: white;
+    box-shadow: 2px 2px 2px #D6DBDF;
+  }
+  
+  .flask-pagedown-preview::before {
+    content: "Preview:";
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .inline-headers h3,
+  .inline-headers h5 {
+    display: inline-block;
+    vertical-align: baseline;
+  }
+  
+  .inline-p p {
+    display: inline-block;
+    vertical-align: baseline;
+  }
+  
